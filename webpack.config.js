@@ -50,7 +50,7 @@ module.exports = {
                     plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
                 }
             }, {
-                test: /\.scss$/,
+                test: /\.(scss|css)$/,
                 loader: ExtractTextPlugin.extract({
                     fallbackLoader: 'style-loader',
                     loader: [{
@@ -64,7 +64,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, "public"),
-        filename: "app.min.js"
+        filename: "bundle.js"
     },
     plugins: [
         new ExtractTextPlugin('style.css'),

@@ -6,6 +6,28 @@
 }
 
 
+body {
+  background: whitesmoke;
 
+}
+
+.left_pic {
+  background: url('/app/images/reja_pic.jpg');
+  background-size: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 3px solid black;
+
+}
+
+.right_pic {
+  background: url('/app/images/radzikowskiego_pic.jpg');
+  background-size: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 3px solid black;
+}
 
 

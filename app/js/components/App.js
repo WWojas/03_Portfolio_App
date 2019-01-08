@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import HomePage from './HomePage/HomePage';
-
+import {HashRouter, Route, Switch} from 'react-router-dom';
+import Home from './Home.js';
+import Radzikowskiego from './Radzikowskiego.js';
+import Reja from './Reja.js';
+import Error from "./Error";
 
 class App extends Component{
     render(){
         return (
-            <div>
-            <HomePage />
-            </div>
+
+            <HashRouter>
+                <Switch>
+                    <Route exact path="/" component = {Home} />
+                    <Route  path="/radzikowskiego" component = {Radzikowskiego} />
+                    <Route  path="/reja" component = {Reja} />
+                    <Route component={Error} />
+                </Switch>
+            </HashRouter>
+
         );
     }
 }
