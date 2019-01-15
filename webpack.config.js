@@ -62,9 +62,13 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        historyApiFallback: true,
+    },
     output: {
         path: path.join(__dirname, "public"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        publicPath: '/'
     },
     plugins: [
         new ExtractTextPlugin('style.css'),

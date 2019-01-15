@@ -1,0 +1,224 @@
+* {
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+}
+
+h2, h1 {
+  font-size: 2rem;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// Header
+
+.viewport_height_main {
+  height: 92vh;
+  width: 100vw;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.viewport_height {
+  height: 95vh;
+  width: 100vw;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main_pic {
+ background: url('/app/images/4k-wallpaper-agriculture-clouds-1646178.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+
+}
+
+
+.header_content_box {
+  vertical-align: middle;
+}
+
+.header_text h1, h2 {
+  color: black
+;
+}
+
+
+.navbar a {
+  font-size: 26px;
+  color: whitesmoke;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+a {
+  color: black;
+}
+
+
+.text {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.inner_text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+.bottom_nav {
+  margin-top: 10px;
+}
+
+.header_button {
+  color: transparent;
+  background: lightgrey;
+  opacity: 0.7;
+  border: 4px solid whitesmoke;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  -webkit-box-shadow: 14px 16px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 16px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 14px 16px 0px 0px rgba(0,0,0,0.75);
+}
+
+.header_arrow {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  background: transparent;
+  border: none;
+
+
+  >img {
+    width:100px;
+    height: 100px;
+    margin-bottom:10px;
+  }
+}
+
+.down_arrow {
+  margin-top: 70px;
+}
+
+.up_arrow {
+  transform: rotate(180deg);
+  margin-top: -20px;
+}
+
+
+// Body
+
+.left_pic {
+  background: url('/app/images/reja_pic.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.right_pic {
+  background: url('/app/images/radzikowskiego_pic.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+.inner_text_box {
+  width: 100vw;
+  height: 60vh;
+  background: lightgrey;
+  opacity: 0.7;
+   border: 6px solid grey;
+  border-radius: 5px;
+  padding: 50px
+}
+
+hr {
+  border: 2px solid black;
+  width: 50%;
+}
+
+
+
+// About
+
+
+.about_pic {
+  background: url('/app/images/about_us.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+
+// Contact
+
+.contact_header {
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  color: whitesmoke;
+  top: 100px;
+  position: relative;
+
+}
+
+.contact_pic {
+  background-image: linear-gradient(to right top, #c280bd, #caa1d3, #d5c0e4, #e5def1, #fbfbfb);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+#form_name, #form_email, #form_message {
+  background: transparent;
+}
+
+.home_arrow  {
+  background: transparent;
+  border: none;
+  float: right;
+  transform: rotate(180deg);
+
+  img {
+    width: 70px;
+    height: 70px;
+
+  }
+}
