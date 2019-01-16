@@ -1,0 +1,55 @@
+
+.about_pic {
+    background: url('/app/images/about_us.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+// Contact
+
+.contact_header {
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    color: whitesmoke;
+    top: 100px;
+    position: relative;
+
+}
+
+.contact_pic {
+    background-image: linear-gradient(to right top, #c280bd, #caa1d3, #d5c0e4, #e5def1, #fbfbfb);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+#form_name, #form_email, #form_message {
+    background: transparent;
+}
+
+.home_arrow  {
+    background: transparent;
+    border: none;
+    float: right;
+    transform: rotate(180deg);
+
+img {
+    width: 70px;
+    height: 70px;
+
+}
+}

@@ -1,43 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 
 
 
 class Home extends Component {
-
-
-
-    scrollToFirst =() => {
-        let first_section= document.querySelector('.first_section');
-
-        first_section.scrollIntoView({behavior:'smooth', block:'center', inline:'nearest'});
-
-    };
-
-    scrollToSecond =() => {
-        let second_section= document.querySelector('.second_section');
-
-        second_section.scrollIntoView({behavior:'smooth', block:'center', inline:'nearest'});
-
-    };
-
-    scrollToThird = () => {
-        let third_section= document.querySelector('.third_section');
-
-        third_section.scrollIntoView({behavior:'smooth', block:'center', inline:'nearest'});
-    };
-
-    scrollToContact = () => {
-        let contact_section= document.querySelector('.contact_section');
-
-        contact_section.scrollIntoView({behavior:'smooth', block:'center', inline:'nearest'});
-    };
-
-    scrollToAbout = () => {
-        let about_section= document.querySelector('.about_section');
-
-        about_section.scrollIntoView({behavior:'smooth', block:'center', inline:'nearest'});
-    };
 
 
 
@@ -54,7 +21,7 @@ class Home extends Component {
                         <nav className="navbar navbar-dark bg-primary navbar-expand-md">
 
                             <a className='navbar_brand m-sm-1 ' href='#'><img src="/app/images/Logo-2.png" width='40' height='40'
-                                                                              className="d-inline-block align-bottom" alt='przedszkole krakowiaczek'/> Krakowiaczek</a>
+                             className="d-inline-block align-bottom" alt='przedszkole krakowiaczek'/> Krakowiaczek</a>
 
                             <button className='navbar-toggler' type='button'
                                     data-toggle='collapse' data-target='#mobile_nav_menu'>
@@ -74,9 +41,6 @@ class Home extends Component {
                                         </div>
                                     </li>
 
-                                    <li className="nav-item"> <a href='#about' className="nav-link"> O Nas </a></li>
-                                    <li className="nav-item"> <a href='#contact_section' className="nav-link"> Kontakt </a></li>
-
                                 </ul>
                             </div>
 
@@ -85,225 +49,88 @@ class Home extends Component {
                     </header>
 
 
-                    {/* HOME */}
+                    <div className="row">
 
 
-                    {/* 1st row with logo and first screen*/}
-                    <div className='row viewport_height_main'>
-                        <div className='main_pic'>
-                        <div className='first_section'> </div>
+                        {/* Carousel for -xs to -sm resolutions */}
 
-                        <div className='col-6 nav header_text'>
-                            <h1 id="section_no1"> Publiczne Przedszkole Krakowiaczek</h1>
-                        </div>
+                    <div id="demo" className="carousel slide d-sm-none" data-ride="carousel">
 
-                        <div className="bottom_nav">
-                            <div className='col-12 nav header_text '>
-                                <button className='header_button'><h2> Nasze Placówki</h2></button>
+                        {/* Indicators */}
+                        <ul className="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" className="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                        </ul>
+
+                        {/* slideshow*/}
+                        <div className="carousel-inner">
+
+                            {/* REJA */}
+                            <div className="carousel-item active">
+                                <div className='img-fluid reja_pic'>
+                                    <div className='text-content viewport_height'>
+                                        <h1> Przedszkole Krakowiaczek </h1>
+                                        <hr/>
+                                        <h1> ul. Mikołaja Reja 13 </h1>
+                                        <button className='btn btn-outline-secondary'><h1><NavLink to="/reja"> Strona Placówki </NavLink>
+                                        </h1></button>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            {/* Down navigation arrow*/}
-                            <div className='col-12 nav header_text '>
-                                <button className='header_arrow down_arrow' onClick ={this.scrollToSecond}><img src='/app/images/down-arrow.gif'/></button>
+                            {/* RADZIKOWSKIEGO */}
+                            <div className="carousel-item">
+                                <div className='img-fluid radzikowskiego_pic' id='radzikowskiego'>
+                                    <div className='text-content viewport_height'>
+                                        <h1> Przedszkole Krakowiaczek </h1>
+                                        <hr/>
+                                        <h1> ul. Eljasza Radzikowskiego 92 </h1>
+                                        <button className='btn btn-outline-secondary'><h1><NavLink to ="/radzikowskiego"> Strona Placówki </NavLink></h1></button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        </div>
-                    </div>
-
-
-
-                    {/* REJA */}
-
-                    <div className='row '>
-
-                        {/* Navigation div*/}
-                        <div className='second_section'></div>
-
-                        <div className='img-fluid left_pic col-12 col-sm-6'>
-
-                            {/* Up navigation arrow*/}
-                            <div className='col-12 nav header_text '>
-                                <button className='header_arrow up_arrow' onClick={this.scrollToFirst}><img src='/app/images/down-arrow.gif'/></button>
                             </div>
 
-                            <div className='text-content viewport_height'>
+                        </div>
 
-                                <div className='inner_text_box viewport_height'>
+
+                        {/* Split screen for -sm to -xl res*/}
+                        <div className="row">
+                            <div className='img-fluid reja_pic col-6  d-none d-sm-block'>
+                                <div className='text-content viewport_height'>
                                     <h1> Przedszkole Krakowiaczek </h1>
                                     <hr/>
                                     <h1> ul. Mikołaja Reja 13 </h1>
-                                    <button className='header_button'><h1><NavLink to ="/reja"> Strona Placówki </NavLink></h1></button>
+                                    <button className='btn btn-outline-secondary'><h1><NavLink to="/reja"> Strona Placówki </NavLink>
+                                    </h1></button>
                                 </div>
-                                {/*Down navigation arrow*/}
-                                <div className='col-12 nav header_text '>
-                                    <button className='header_arrow down_arrow' onClick ={this.scrollToThird}><img src='/app/images/down-arrow.gif'/></button>
-                                </div>
+
                             </div>
 
-                        </div>
-
-
-
-                        {/* RADZIKOWSKIEGO */}
-
-
-                        <div className='img-fluid right_pic col-12 col-sm-6'>
-
-
-                            {/*Up navigation arrow*/}
-                            <div className='col-12 nav header_text '>
-
-
-
-                                <button className='header_arrow up_arrow' onClick={this.scrollToSecond}><img src='/app/images/down-arrow.gif'/></button>
-                            </div>
-
-                            <div className='text-content viewport_height'>
-
-
-                                <div className='inner_text_box viewport_height third_section'>
-
+                            <div className='img-fluid radzikowskiego_pic col-6  d-none d-sm-block' id='radzikowskiego'>
+                                <div className='text-content viewport_height'>
                                     <h1> Przedszkole Krakowiaczek </h1>
                                     <hr/>
                                     <h1> ul. Eljasza Radzikowskiego 92 </h1>
-                                    <button className='header_button'><h1><NavLink to ="/radzikowskiego"> Strona Placówki </NavLink></h1></button>
-                                </div>
-
-
-                                {/*Down navigation arrow*/}
-                                <div className='col-12 nav header_text '>
-                                    <button className='header_arrow down_arrow' onClick ={this.scrollToAbout}><img src='/app/images/down-arrow.gif'/></button>
+                                    <button className='btn btn-outline-secondary'><h1><NavLink to ="/radzikowskiego"> Strona Placówki </NavLink></h1></button>
                                 </div>
                             </div>
 
+
                         </div>
+
+
+
+                    </div>
                     </div>
 
 
-                    {/* ABOUT US */}
-
-                    <div className='row '>
-
-                        {/* Navigation div*/}
-                        <div className='about_section'></div>
-
-                    <div className='img-fluid about_pic col-12 col-12'>
 
 
-                        {/*Up navigation arrow*/}
-                        <div className='col-12 nav header_text '>
-
-                            <button className='header_arrow up_arrow' onClick={this.scrollToThird}><img src='/app/images/down-arrow.gif'/></button>
-                        </div>
-
-                        <div className='text-content viewport_height'>
-
-
-                            <div className='inner_text_box viewport_height third_section'>
-
-                                <h1> Nasz Zespół </h1>
-                                <hr/>
-                                <h5> Kadra dydaktyczna Przedszkola to zespół doświadczonych nauczycielek z wieloletnim stażem w zakresie nauczania przedszkolnego.</h5>
-                                <h5> Nasi Pedagodzy dbają o prawidłowy rozwój dzieci zarówno w zakresie umysłowym, jak i emocjonalnym. </h5>
-
-                            </div>
-
-
-                            {/*Down navigation arrow*/}
-                            <div className='col-12 nav header_text '>
-                                <button className='header_arrow down_arrow' onClick ={this.scrollToContact}><img src='/app/images/down-arrow.gif'/></button>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
 
 
-                    {/* CONTACT FORM */}
-                    <div className='row '>
-
-
-                        {/* Navigation div*/}
-                        <div className='contact_section'></div>
-
-
-                            <div className='img-fluid contact_pic col'>
-
-
-                                <div className="contact_header">
-
-                                    <h1> Kontakt </h1>
-                                </div>
-
-
-                                <form id="contact-form" method='post' role="form" action= 'contact.php'>
-
-                                    <div className="messages"> </div>
-
-                                    <div className="controls pt-5">
-
-                                        <div className="row">
-
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label htmlFor="form_name"> </label>
-                                                    <input id="form_name" type="text" name="name"
-                                                           className="form-control"
-                                                           placeholder='Imię i Nazwisko'
-                                                           required="required" data-error="Imię jest wymagane"> </input>
-                                                        <div className="help-block with-errors"> </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label htmlFor="form_email"> </label>
-                                                    <input id="form_email" type="email" name="email"
-                                                           className="form-control"
-                                                           placeholder="Adres E-mail " required="required"
-                                                           data-error="Valid email is required."> </input>
-                                                        <div className="help-block with-errors"> </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <label htmlFor="form_message"> </label>
-                                                    <textarea id="form_message" name="message" className="form-control"
-                                                              placeholder="Wiadomość" rows="4"
-                                                              required="required"
-                                                              data-error="Please, leave us a message.">Wiadomość </textarea>
-                                                    <div className="help-block with-errors"> </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12">
-                                                <input type="submit" className="btn btn-success btn-send"
-                                                       value="Wyślij wiadomość"> </input>
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <p className="text-muted">
-                                                    <strong>*</strong> Pola wymagane </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form>
-
-                                <div className='col-12 '>
-                                    <button className='home_arrow' onClick ={this.scrollToFirst}><img src='/app/images/home_arrow.png'/></button>
-                                </div>
-
-                            </div>
-
-                    </div>
-
-                </div>
-            </div>
 
 
 
