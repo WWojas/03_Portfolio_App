@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {HashRouter, Route, Switch} from 'react-router-dom';
-import Home from './Home/Home.js';
+import Homepage from './Home/Homepage.js';
 import Radzikowskiego from './Radzikowskiego/Radzikowskiego.js';
 import Reja from './Reja/Reja.js';
 import Error from "./Error/Error.js";
@@ -11,7 +11,7 @@ class App extends Component{
 
             <HashRouter>
                 <Switch>
-                    <Route exact path="/" component = {Home} />
+                    <Route exact path="/" component = {Homepage} />
                     <Route  path="/radzikowskiego" component = {Radzikowskiego} />
                     <Route  path="/reja" component = {Reja} />
                     <Route component={Error} />

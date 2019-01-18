@@ -4,16 +4,13 @@ import {HashLink as Link} from 'react-router-hash-link';
 
 
 
-class Home extends Component {
+class Homepage extends Component {
 
 
 
     render() {
         return (
             <div>
-
-                <div className='container-fluid'>
-
 
                     {/* NAVBAR */}
 
@@ -44,11 +41,10 @@ class Home extends Component {
                                 </ul>
                             </div>
 
-
                         </nav>
                     </header>
 
-
+                <div classname="container">
                     <div className="row">
 
 
@@ -69,6 +65,7 @@ class Home extends Component {
                             <div className="carousel-item active">
                                 <div className='img-fluid reja_pic'>
                                     <div className='text-content viewport_height'>
+                                        <img src='/app/images/reja_pic.jpg' className="round_icon"/>
                                         <h1> Przedszkole Krakowiaczek </h1>
                                         <hr/>
                                         <h1> ul. Mikołaja Reja 13 </h1>
@@ -83,6 +80,7 @@ class Home extends Component {
                             <div className="carousel-item">
                                 <div className='img-fluid radzikowskiego_pic' id='radzikowskiego'>
                                     <div className='text-content viewport_height'>
+                                        <img src='/app/images/radzikowskiego_pic.jpg' className="round_icon"/>
                                         <h1> Przedszkole Krakowiaczek </h1>
                                         <hr/>
                                         <h1> ul. Eljasza Radzikowskiego 92 </h1>
@@ -99,6 +97,7 @@ class Home extends Component {
                         <div className="row">
                             <div className='img-fluid reja_pic col-6  d-none d-sm-block'>
                                 <div className='text-content viewport_height'>
+                                    <img src='/app/images/reja_pic.jpg' className="round_icon"/>
                                     <h1> Przedszkole Krakowiaczek </h1>
                                     <hr/>
                                     <h1> ul. Mikołaja Reja 13 </h1>
@@ -110,6 +109,7 @@ class Home extends Component {
 
                             <div className='img-fluid radzikowskiego_pic col-6  d-none d-sm-block' id='radzikowskiego'>
                                 <div className='text-content viewport_height'>
+                                    <img src='/app/images/radzikowskiego_pic.jpg' className="round_icon"/>
                                     <h1> Przedszkole Krakowiaczek </h1>
                                     <hr/>
                                     <h1> ul. Eljasza Radzikowskiego 92 </h1>
@@ -120,14 +120,8 @@ class Home extends Component {
 
                         </div>
 
-
-
                     </div>
-                    </div>
-
-
-
-
+                </div>
                 </div>
 
 
@@ -138,4 +132,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Homepage;
