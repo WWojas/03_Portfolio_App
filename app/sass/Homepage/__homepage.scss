@@ -1,7 +1,6 @@
 
 
 * {
-
   box-sizing: border-box;
 }
 
@@ -52,11 +51,28 @@
 
 // About
 
+.about_box {
 
-.about_header {
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background: lightgrey;
+
+}
+
+
+.section_header {
   font-size: 24px;
   padding-top: 20px;
 
+}
+
+.about_icon {
+  width:100px;
+  height: 100px;
+  padding: 10px;
+  margin: 0;
 }
 
 hr {
@@ -91,5 +107,69 @@ hr {
 }
 
 
+// Projects
+
+.project_item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 
+
+// Contact
+
+
+.about_pic {
+  background: url('/app/images/about_us.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+
+// Contact
+
+.contact_header {
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  color: whitesmoke;
+  top: 100px;
+  position: relative;
+
+}
+
+.contact_pic {
+  background-image: linear-gradient(to right top, #1f1766, #211981, #241a9e, #2619bb, #2917d8);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+#form_name, #form_email, #form_message {
+  background: transparent;
+}
+
+.home_arrow  {
+  background: transparent;
+  border: none;
+  float: right;
+  transform: rotate(180deg);
+
+  img {
+    width: 70px;
+    height: 70px;
+
+  }
+}
