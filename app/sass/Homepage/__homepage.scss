@@ -1,14 +1,11 @@
 
 
 * {
-  font-family: 'Merienda', cursive;
+
   box-sizing: border-box;
 }
 
 
-h2, h1 {
-  font-size: 1.5rem;
-}
 
 @media (min-width: 992px) and (max-width: 1200px) {
   h1, h2{font-size: 2rem;}
@@ -28,87 +25,42 @@ h2, h1 {
 }
 
 
-// Header
 
 
 
-.viewport_height {
-  height: 95vh;
-  width: 100vw;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+// Home
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.header_content_box {
-  vertical-align: middle;
+.body_pic {
+  background: url('/app/images/animation-art-colors-948331.jpg');
+  background-size: cover;
+  width:100%;
+  height: 100vh;
 }
 
-.header_text h1, h2 {
-  color: black
-
-}
-
-
-.navbar a {
-  font-size: 26px;
+#home {
   color: whitesmoke;
-}
-
-.navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
+  font-size: 1.5rem;
 }
 
 
-a {
-  color: black;
-}
+// About
 
 
-.text {
-  display: table;
-  width: 100%;
-  height: 100%;
-
-}
-.inner_text {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
-  h1 {
-    color: whitesmoke;
-  }
-}
-
-
-
-
-// Body
-
-.reja_pic {
-  background-image: linear-gradient(to right, #39cccc, #5bcccc, #73cdcb, #86cdcb, #98cdcb);
-  background-size: cover;
-  height: 92vh;
-  width: 100%;
-  background-repeat: no-repeat;
-
-}
-
-.radzikowskiego_pic {
-  background-image: linear-gradient(to left, #12a5f4, #33b0f0, #50baeb, #6bc3e7, #85cbe3);
-  background-size: cover;
-  height: 92vh;
-  width: 100%;
-  background-repeat: no-repeat;
+.about_header {
+  font-size: 24px;
+  padding-top: 20px;
 
 }
 
 hr {
-  border: 2px solid whitesmoke;
+  border: 2px solid black;
   width: 50%;
 
 }
