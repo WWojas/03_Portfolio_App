@@ -52,11 +52,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WWojas/02_Preschool_Website.git"
+    "url": "git+https://github.com/WWojas/Portfolio_Website.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WWojas/02_Preschool_Website/issues"
+    "url": "https://github.com/WWojas/Portfolio_Website.git/issues"
   },
-  "homepage": "https://github.com/WWojas/02_Preschool_Website#readme"
+  "homepage": "https://github.com/WWojas/Portfolio_Website.git#readme"
 }
