@@ -4,24 +4,26 @@ import {HashLink as Link} from 'react-router-hash-link';
 
 
 
+
 class Homepage extends Component {
 
 
     scrollToFirst = () => {
         window.scrollTo(0, this.home)
 
-    }
+    };
 
     render() {
         return (
             <div>
 
+
                 {/* HOME */}
 
-                <div classname="container">
+                <div classname="container-fluid">
 
                     <section id='home'>
-                        <div className='body_pic flex'>
+                        <div className='body_pic flex text-center'>
                             <h1> Welcome to CodeWave</h1>
                             <button className='btn btn-outline-secondary'><h1><NavLink to="/portfolio"> Projects <i
                                 className="fas fa-arrow-right"> </i> </NavLink>
@@ -32,11 +34,12 @@ class Homepage extends Component {
 
 
 
+                    <div className="container_1200">
                     {/* About */}
 
                     <section id='about'>
                         <div className="row flex">
-                            <div class="section_header"> About <hr /> </div>
+                            <div className="section_header"> About <hr /> </div>
                         </div>
 
 
@@ -90,60 +93,119 @@ class Homepage extends Component {
                     </section>
 
 
+                        <section id='author'>
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="row">
+
+                                        <div className="col-12 col-sm-6 text-center">
+                                            <img src='/app/images/author.jpg' class="img-fluid author_img" />
+
+                                            <h2> Who am I </h2>
+
+                                            <p>I'm the Front-End Developer for EyeCue Lab in Portland, OR.
+                                                I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                                                Let's make something special.</p>
+                                        </div>
+
+
+                                        <div class="col-12 col-sm-6 text-center">
+                                            <div class="skill_box">
+
+                                                <div class="skill_hex flex"> HTML </div>
+                                                <div className="skill_hex flex"> CSS</div>
+                                                <div className="skill_hex flex"> SASS</div>
+                                                <div className="skill_hex flex"> Javascript</div>
+                                                <div className="skill_hex flex"> jQuery</div>
+                                                <div className="skill_hex flex"> REST API</div>
+                                                <div className="skill_hex flex"> React JS</div>
+                                                <div className="skill_hex flex"> Webpack & GIT</div>
+
+
+
+                                            </div>
+                                        </div>
+
+
+                                </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+
+                        </section>
+
+
 
                     {/* Projects*/}
                     <section id='projects'>
+
                         <div className="row flex">
                             <div className="section_header"> Projects <hr/></div>
                         </div>
 
 
-                            <div class="row projects_box">
+                        <div class="row projects_box">
 
-                                {/* project no 1 */}
-                                <div class="project_item col-sm-5">
-                                    <img src='/app/images/meditation_ass.png' class="img-fluid"/>
-                                </div>
-
-                                {/* project no 2 */}
-                                <div className="project_item col-sm-5 ">
-                                    <img src='/app/images/meditation_ass.png' class="img-fluid"/>
-                                </div>
-
-                                {/* project no 3*/}
-                                <div className="project_item col-sm-5">
-                                    <img src='/app/images/meditation_ass.png' class="img-fluid"/>
-                                </div>
-
-                                {/* project no 4*/}
-                                <div className="project_item col-sm-5">
-                                    <img src='/app/images/meditation_ass.png' class="img-fluid"/>
-                                </div>
-
+                            {/* project no 1 */}
+                            <div class="project_item col-sm-5">
+                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
                             </div>
+
+                            {/* project no 2 */}
+                            <div className="project_item col-sm-5 ">
+                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                            </div>
+
+                            {/* project no 3*/}
+                            <div className="project_item col-sm-5">
+                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                            </div>
+
+                            {/* project no 4*/}
+                            <div className="project_item col-sm-5">
+                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                            </div>
+
+                        </div>
                     </section>
 
+                    </div>
 
                     {/* Contact */}
 
 
                     <section id='contact'>
 
-                    <div className='row'>
+
+                    <div className='row align-items-center'>
 
                         {/* Navigation div*/}
                         <div className='contact_section'></div>
 
-                        <div className='img-fluid contact_pic col'>
-
-                            <div className="row flex">
-                                <div className="section_header"> Contact <hr/></div>
-                            </div>
+                        <div className='img-fluid contact_pic col-12 justify-content-center'>
 
 
                             <div className="row">
 
-                            <form id="contact-form" method='post' role="form" action= 'contact.php'>
+                            <form class="col-12 col-sm-6 top_padding" id="contact-form" method='post' role="form" action= 'contact.php'>
+
+                                <div className="row">
+                                <div className="section_contact flex">
+                                    <h2> Contact <hr/></h2>
+                                    <p> Have some questions? Want to get in touch?</p>
+
+                                </div>
+
+                                </div>
 
                                 <div className="messages"> </div>
 
@@ -151,7 +213,7 @@ class Homepage extends Component {
 
                                     <div className="row">
 
-                                        <div className="col-md-6">
+                                        <div className="col">
                                             <div className="form-group">
                                                 <label htmlFor="form_name"> </label>
                                                 <input id="form_name" type="text" name="name"
@@ -163,7 +225,7 @@ class Homepage extends Component {
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col">
                                             <div className="form-group">
                                                 <label htmlFor="form_email"> </label>
                                                 <input id="form_email" type="email" name="email"
@@ -176,7 +238,7 @@ class Homepage extends Component {
 
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col">
                                             <div className="form-group">
                                                 <label htmlFor="form_message"> </label>
                                                 <textarea id="form_message" name="message" className="form-control"
@@ -186,29 +248,36 @@ class Homepage extends Component {
                                                 <div className="help-block with-errors"> </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                    </div>
+
+                                        <div className='row'>
+
+                                        <div className="col">
                                             <input type="submit" className="btn btn-success btn-send"
                                                    value="Send message"> </input>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-md-6">
+
+                                        <div className="col">
                                             <p className="text-muted">
                                                 <strong>*</strong> Required </p>
                                         </div>
-                                    </div>
+
                                 </div>
 
                             </form>
-
-                            <div className='col-md-6 '>
+                            </div>
+                                {/* arrow*/}
+                                <div class="row">
+                            <div className='col'>
                                 <button className='home_arrow' onClick ={this.scrollToFirst}><img src='/app/images/home_arrow.png'/></button>
                             </div>
 
+                                </div>
                         </div>
                         </div>
 
-                    </div>
+
                     </section>
 
 

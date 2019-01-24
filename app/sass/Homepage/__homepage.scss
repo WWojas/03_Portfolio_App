@@ -11,7 +11,9 @@
 }
 
 
-
+.container_1200 {
+  max-width: 1200px;
+}
 
 .container-fluid {
   padding-left: 0;
@@ -50,6 +52,11 @@
 
 
 // About
+
+
+#about {
+  background: darkgrey;
+}
 
 .about_box {
 
@@ -107,7 +114,45 @@ hr {
 }
 
 
+#author {
+ margin-top: 30px;
+
+  p {
+    color: black;
+  }
+
+}
+
+.author_img {
+  width: 250px;
+  height: 250px;
+}
+
+.skill_box {
+  background: lightgrey;
+  height: 50%;
+}
+
+.skill_hex {
+
+  width: 100%;
+  padding: 0 0 15px 0;
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 11pt;
+  background-image: linear-gradient(to right top, #3aa1e3, #25b1e4, #31c0e1, #50cedb, #72dad5);
+
+}
+
+
 // Projects
+
+
+#projects {
+  background: lightgrey;
+}
+
+
 
 .project_item {
   margin-top: 10px;
@@ -172,4 +217,16 @@ hr {
     height: 70px;
 
   }
+}
+
+#contact {
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+.top_padding {
+  padding-top: 15vh;
+}
+
+.section_contact h2, p {
+      color: whitesmoke;
 }
