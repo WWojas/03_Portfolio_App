@@ -128,18 +128,13 @@ hr {
   height: 250px;
 }
 
-.skill_box {
-  background: lightgrey;
-  height: 50%;
-}
+
 
 .skill_hex {
 
-  width: 100%;
-  padding: 0 0 15px 0;
-  margin: 0 0 10px 0;
+  margin: 10px;
   color: white;
-  font-size: 11pt;
+  font-size: 12pt;
   background-image: linear-gradient(to right top, #3aa1e3, #25b1e4, #31c0e1, #50cedb, #72dad5);
 
 }
@@ -157,6 +152,11 @@ hr {
 .project_item {
   margin-top: 10px;
   margin-bottom: 10px;
+  opacity: 0.5;
+
+   > img:hover {
+    opacity: 1;
+  }
 }
 
 

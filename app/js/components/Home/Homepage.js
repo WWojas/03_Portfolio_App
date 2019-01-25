@@ -51,7 +51,7 @@ class Homepage extends Component {
                                    <img src='/app/images/about_icon.svg' className="about_icon"/>
                                 </div>
                                 <div>
-                                   <h4> Responsive</h4>
+                                   <h4> Responsive </h4>
                                     <p> My layouts will work on any device, large or small</p>
                                 </div>
                                 </div>
@@ -62,8 +62,8 @@ class Homepage extends Component {
                                         <img src='/app/images/about_icon.svg' className="about_icon"/>
                                     </div>
                                     <div>
-                                        <h4> Responsive</h4>
-                                        <p> My layouts will work on any device, large or small</p>
+                                        <h4> Fast </h4>
+                                        <p> My layouts are optimised for quick, trouble-free loading</p>
                                     </div>
                                 </div>
 
@@ -73,8 +73,8 @@ class Homepage extends Component {
                                         <img src='/app/images/about_icon.svg' className="about_icon"/>
                                     </div>
                                     <div>
-                                        <h4> Responsive</h4>
-                                        <p> My layouts will work on any device, large or small</p>
+                                        <h4> Dynamic </h4>
+                                        <p> My layouts are engaging and eye-catching</p>
                                     </div>
                                 </div>
 
@@ -84,8 +84,8 @@ class Homepage extends Component {
                                         <img src='/app/images/about_icon.svg' className="about_icon"/>
                                     </div>
                                     <div>
-                                        <h4> Responsive</h4>
-                                        <p> My layouts will work on any device, large or small</p>
+                                        <h4> Intuitive </h4>
+                                        <p> My layouts are designed with UX/UI experience in mind</p>
                                     </div>
                                 </div>
                             </div>
@@ -105,14 +105,16 @@ class Homepage extends Component {
 
                                             <h2> Who am I </h2>
 
-                                            <p>I'm the Front-End Developer for EyeCue Lab in Portland, OR.
-                                                I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-                                                Let's make something special.</p>
+                                            <p>I'm the Front-End Developer, owner of CodeWave, Cracov, Poland. <br />
+                                                I have a dedication towards making fully functional, usable web applications.
+                                                </p>
                                         </div>
 
 
-                                        <div class="col-12 col-sm-6 text-center">
+                                        <div class="col-12 col-sm-6 text-left">
                                             <div class="skill_box">
+
+
 
                                                 <div class="skill_hex flex"> HTML </div>
                                                 <div className="skill_hex flex"> CSS</div>
@@ -157,22 +159,22 @@ class Homepage extends Component {
 
                             {/* project no 1 */}
                             <div class="project_item col-sm-5">
-                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                                <img src='/app/images/Meditation_assistant.png' class="img-fluid"/>
                             </div>
 
                             {/* project no 2 */}
                             <div className="project_item col-sm-5 ">
-                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                                <img src='/app/images/Meditation_assistant.png' class="img-fluid"/>
                             </div>
 
                             {/* project no 3*/}
                             <div className="project_item col-sm-5">
-                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                                <img src='/app/images/Meditation_assistant.png' class="img-fluid"/>
                             </div>
 
                             {/* project no 4*/}
                             <div className="project_item col-sm-5">
-                                <img src='/app/images/meditation_ass.png' class="img-fluid"/>
+                                <img src='/app/images/Meditation_assistant.png' class="img-fluid"/>
                             </div>
 
                         </div>
