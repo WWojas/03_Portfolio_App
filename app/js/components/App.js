@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import Homepage from './Home/Homepage.js';
-// import Radzikowskiego from './Radzikowskiego/Radzikowskiego.js';
-// import Reja from './Reja/Reja.js';
-import Error from "./Error/Error.js";
+import Error from "./Error.js";
 
 class App extends Component{
     render(){

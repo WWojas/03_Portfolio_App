@@ -55,12 +55,57 @@
   height: 50px;
 }
 
+.logo_main {
+  width: 250px;
+  height: 200px
+}
+
+
+.navbar {
+  background: dimgrey;
+  opacity: 1;
+  border-bottom: 2px solid orange;
+  font-size: 1rem;
+  font-weight: bold;
+
+
+  &-toggler {
+    border: none;
+  }
+
+  a {
+    color: whitesmoke;
+    cursor: pointer;
+
+    &:hover {
+      color: orange
+    }
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+  }
+
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: whitesmoke;
+}
+
+.flex_hamburger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 
 // About
 
 
 #about {
-  background: lightgrey;
+
   color: black;
   padding: 20px;
 }
@@ -146,7 +191,7 @@ hr {
   margin: 10px;
   color: white;
   font-size: 12pt;
-  background-image: linear-gradient(to right top, #3aa1e3, #25b1e4, #31c0e1, #50cedb, #72dad5);
+  background-image: linear-gradient(to right top, #ffa806, #f7b940, #f1c867, #edd68d, #ebe1b2);
 
 }
 
@@ -164,24 +209,28 @@ hr {
 
 .project_item {
  margin: 10px 0;
-  opacity: 0.5;
+  opacity: 1;
 
    > :hover {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
-
-
-
-
-
-// Testimonials
-
-.avatar {
-  width: 100px;
-  height: 100px;
+.desc_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
 }
+
+.project_test {
+  background-image: url('/app/images/Meditation_assistant.png');
+}
+
+
+
+
 
 
 // Contact
