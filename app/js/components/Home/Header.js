@@ -8,9 +8,9 @@ class Header extends React.Component{
                 <div className='body_pic flex text-center'>
                     <img src='/app/images/CodeWave.svg' className='logo_main'/>
 
-                    <button className='btn btn-outline-secondary'>
+                    <button className='btn btn-outline-secondary btn_header'>
                         <h1>
-                        <NavLink to="/portfolio"> Projects <img src='/app/images/main_arrow.svg'
+                        <NavLink to="/#projects"> Projects <img src='/app/images/main_arrow.svg'
                                                                 className="main_arrow"/> </NavLink>
                     </h1></button>
                 </div>

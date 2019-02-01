@@ -1,0 +1,68 @@
+// About
+
+
+#about {
+
+  color: black;
+  padding: 20px;
+}
+
+.about_box {
+
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+
+
+}
+
+
+.section_header {
+  font-size: 24px;
+  padding-top: 20px;
+
+}
+
+.about_icon {
+  width:100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.about_desc {
+  margin: 10px 0;
+  color: black
+}
+
+hr {
+  border: 2px solid black;
+  width: 50%;
+
+}
+
+
+.round_icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+
+.btn {
+  background: transparent;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  margin-top: 20px;
+
+
+  a {
+    color: whitesmoke;
+    text-transform: uppercase;
+
+  }
+
+
+}
+
