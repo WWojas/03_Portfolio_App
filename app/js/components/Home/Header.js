@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link";
 
 class Header extends React.Component{
     render() {
@@ -10,8 +11,15 @@ class Header extends React.Component{
 
                     <button className='btn btn-outline-secondary btn_header'>
                         <h1>
-                        <NavLink to="/#projects"> Projects <img src='/app/images/main_arrow.svg'
-                                                                className="main_arrow"/> </NavLink>
+                            <Link to ="/#projects" className='dropdown-item'>
+
+                                <div className='flex_header'>
+                                    <div> Portfolio</div>
+                                    <div> <img src='/app/images/main_arrow.svg'
+                                                                                             className="main_arrow"/>
+                                    </div>
+                                </div>
+                                </Link>
                     </h1></button>
                 </div>
 
@@ -22,19 +30,19 @@ class Header extends React.Component{
                 <nav className="navbar navbar-expand-sm fixed-top d-none d-sm-block">
                     <ul className="navbar-nav">
                         <li className="nav-item active px-5">
-                            <a className="nav-link" href="#">Home</a>
+                            <Link to ="/" className='dropdown-item'> Home </Link>
                         </li>
                         <li className="nav-item px-5">
-                            <a className="nav-link" href="#">About</a>
+                            <Link to ="/#about" className='dropdown-item'> About </Link>
                         </li>
                         <li className="nav-item px-5">
-                            <a className="nav-link" href="#">Portfolio</a>
+                            <Link to ="/#projects" className='dropdown-item'> Portfolio </Link>
                         </li>
                         <li className="nav-item px-5">
-                            <a className="nav-link" href="#">Connect</a>
+                            <Link to ="/#lets_connect" className='dropdown-item'> Connect </Link>
                         </li>
                         <li className="nav-item px-5">
-                            <a className="nav-link" href="#">Contact</a>
+                            <Link to ="/#contact" className='dropdown-item'> Contact </Link>
                         </li>
                     </ul>
                 </nav>
@@ -58,19 +66,19 @@ class Header extends React.Component{
 
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active px-5">
-                                <a className="nav-link" href="#">Home</a>
+                                <Link to ="/" className='dropdown-item'> Home </Link>
                             </li>
                             <li className="nav-item px-5">
-                                <a className="nav-link" href="#">About</a>
+                                <Link to ="/#about" className='dropdown-item'> About </Link>
                             </li>
                             <li className="nav-item px-5">
-                                <a className="nav-link" href="#">Portfolio</a>
+                                <Link to ="/#projects" className='dropdown-item'> Portfolio </Link>
                             </li>
                             <li className="nav-item px-5">
-                                <a className="nav-link" href="#">Connect</a>
+                                <Link to ="/#lets_connect" className='dropdown-item'> Connect </Link>
                             </li>
                             <li className="nav-item px-5">
-                                <a className="nav-link" href="#">Contact</a>
+                                <Link to ="/#contact" className='dropdown-item'> Contact </Link>
                             </li>
                         </ul>
 
@@ -84,3 +92,4 @@ class Header extends React.Component{
         }
 
 export default Header;
+

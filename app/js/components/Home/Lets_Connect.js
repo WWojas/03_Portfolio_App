@@ -10,20 +10,27 @@ class Lets_Connect extends React.Component{
                         <div className="section_header"> Let's Connect <hr/></div>
                         <p> Here you can learn more about me and my work</p>
 
-                        <div className='flex text-center'>
+                        <div className='row flex_connect text-center'>
 
-                            <div>
-                                <img src='/app/images/social_1.svg' className="avatar"/>
-                                <p className="quote">
-                                    GitHub Profile
-                                </p>
-                            </div>
+                           <div class="col-12 col-md-6 connect_wrapper">
+                                <img src='/app/images/connect_bg_linkedin.jpg' className="connect_bg_pic img-fluid" />
 
-                            <div>
-                                <img src='/app/images/social_2.svg' className="avatar"/>
+                                <figcaption class="connect_desc flex">
                                 <p className="quote">
                                     LinkedIn Profile
                                 </p>
+                                </figcaption>
+                            </div>
+
+
+                            <div className="col-12 col-md-6 connect_wrapper">
+                                <img src='/app/images/connect_bg_github.jpg' className="connect_bg_pic img-fluid" />
+
+                                <figcaption class="connect_desc flex">
+                                <p className="quote">
+                                    GitHub Profile
+                                </p>
+                                </figcaption>
                             </div>
                         </div>
 

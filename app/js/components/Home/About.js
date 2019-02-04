@@ -15,9 +15,9 @@ class About extends Component {
                 <div className="row about_wrapper">
 
                     {/*1st skill*/}
-                    <div className="about_box col-12 col-sm-5 col-md-3 text-center">
-                        <div claclassNamess="about_icon">
-                            <img src='/app/images/about_1.svg' className="about_icon"/>
+                    <div className="about_box col-12 col-sm-5 col-md-3 text-center " id='about_animation'>
+                        <div className="about_icon">
+                            <img src='/app/images/about_1.svg' className="about_icon zoom"/>
                         </div>
                         <div className="about_desc">
                             <h4> Responsive </h4>
@@ -26,9 +26,9 @@ class About extends Component {
                     </div>
 
                     {/*2nd skill*/}
-                    <div className="about_box col-12 col-sm-5 col-md-3 text-center">
+                    <div className="about_box col-12 col-sm-5 col-md-3 text-center" id='about_animation' >
                         <div className="about_icon">
-                            <img src='/app/images/about_2.svg' className="about_icon"/>
+                            <img src='/app/images/about_2.svg' className="about_icon zoom"/>
                         </div>
                         <div className="about_desc">
                             <h4> Fast </h4>
@@ -37,9 +37,9 @@ class About extends Component {
                     </div>
 
                     {/*3rd skill*/}
-                    <div className="about_box col-12 col-sm-5 col-md-3 text-center">
+                    <div className="about_box col-12 col-sm-5 col-md-3 text-center" id='about_animation' >
                         <div className="about_icon">
-                            <img src='/app/images/about_3.svg' className="about_icon"/>
+                            <img src='/app/images/about_3.svg' className="about_icon zoom"/>
                         </div>
                         <div className="about_desc">
                             <h4> Dynamic </h4>
@@ -48,9 +48,9 @@ class About extends Component {
                     </div>
 
                     {/*4th skill*/}
-                    <div className="about_box col-12 col-sm-5 col-md-3 text-center ">
+                    <div className="about_box col-12 col-sm-5 col-md-3 text-center" id='about_animation'>
                         <div className="about_icon">
-                            <img src='/app/images/about_4.svg' className="about_icon"/>
+                            <img src='/app/images/about_4.svg' className="about_icon zoom"/>
                         </div>
                         <div className="about_desc">
                             <h4> Intuitive </h4>
