@@ -1,26 +1,55 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import {HashLink as Link} from "react-router-hash-link";
 
+
+
+
 class Header extends React.Component{
+
+
+    componentDidMount() {
+
+        window.addEventListener('scroll', this.resizeHeaderOnScroll);
+    }
+
+
+    resizeHeaderOnScroll = () => {
+      var desktop_header = document.querySelector('#main_navbar');
+        desktop_header.style.height='25px';
+
+        var desktop_navbar = document.querySelector('.navbar');
+        desktop_navbar.style.borderBottom='3px solid orange';
+
+
+        var mobile_nav_color = document.querySelector('#mobile_navbar');
+        mobile_nav_color.style.borderBottom='3px solid orange';
+
+        var mobile_nav_hide = document.querySelector('#navbarSupportedContent1');
+        mobile_nav_hide.classList.remove('show')
+
+
+    }
+
+
+
     render() {
         return (
             <section id='home'>
                 <div className='body_pic flex text-center'>
-                    <img src='/app/images/CodeWave.svg' className='logo_main'/>
+                    <img src='/images/CodeWave.svg' className='logo_main'/>
 
-                    <button className='btn btn-outline-secondary btn_header'>
-                        <h1>
-                            <Link to ="/#projects" className='dropdown-item'>
+                    <button className=' btn_header'>
+
+                            <Link to ="/#projects">
 
                                 <div className='flex_header'>
-                                    <div> Portfolio</div>
-                                    <div> <img src='/app/images/main_arrow.svg'
+                                    <div><h1> Portfolio </h1></div>
+                                    <div className="flex"> <img src='/images/main_arrow.svg'
                                                                                              className="main_arrow"/>
                                     </div>
                                 </div>
                                 </Link>
-                    </h1></button>
+                    </button>
                 </div>
 
 
@@ -28,7 +57,7 @@ class Header extends React.Component{
 
                 {/* Desktop */}
                 <nav className="navbar navbar-expand-sm fixed-top d-none d-sm-block">
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav align-items-center" id='main_navbar'>
                         <li className="nav-item active px-5">
                             <Link to ="/" className='dropdown-item'> Home </Link>
                         </li>
@@ -49,14 +78,14 @@ class Header extends React.Component{
 
 
                 {/* Mobile */}
-                <nav className="navbar navbar-light light-blue lighten-4 d-block d-sm-none fixed-top">
+                <nav className="navbar navbar-light light-blue lighten-4 d-block d-lg-none fixed-top" id='mobile_navbar'>
 
-                    <div className="flex_hamburger">
+                    <div className="flex_hamburger" >
                     <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent1"
                             aria-controls="navbarSupportedContent1" aria-expanded="false"
                             aria-label="Toggle navigation">
-                        <img src='/app/images/hamburger_icon.svg' />
+                        <img src='/images/hamburger_icon.svg' />
 
                     </button>
                     </div>
@@ -64,8 +93,8 @@ class Header extends React.Component{
                     <div className="collapse navbar-collapse" id="navbarSupportedContent1">
 
 
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active px-5">
+                        <ul className="navbar-nav mr-auto align-items-center">
+                            <li className="nav-item px-5">
                                 <Link to ="/" className='dropdown-item'> Home </Link>
                             </li>
                             <li className="nav-item px-5">

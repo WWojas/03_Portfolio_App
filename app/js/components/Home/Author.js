@@ -11,12 +11,12 @@ class Author extends React.Component{
                         <div className="row">
 
                             <div className="col-12 col-sm-6 text-center">
-                                <img src='/app/images/author.jpg' className="img-fluid author_img"/>
+                                <img src='/images/author.jpg' className="img-fluid author_img"/>
 
                                 <h2> Who am I </h2>
 
                                 <p>I'm the Front-End Developer, owner of CodeWave, Cracov, Poland. <br/>
-                                    I have a dedication towards making fully functional, usable web applications.
+                                    I am dedicated towards making fully functional, usable web applications.
                                 </p>
                             </div>
 
@@ -31,8 +31,8 @@ class Author extends React.Component{
                                     <div className="skill_hex flex"> Javascript</div>
                                     <div className="skill_hex flex"> jQuery</div>
                                     <div className="skill_hex flex"> REST API</div>
-                                    <div className="skill_hex flex"> React JS</div>
-                                    <div className="skill_hex flex"> Webpack & GIT</div>
+                                    <div className="skill_hex flex"> React JS & Webpack</div>
+                                    <div className="skill_hex flex"> Bootstrap & GIT</div>
                                 </div>
                             </div>
                         </div>

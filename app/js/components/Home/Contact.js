@@ -1,6 +1,13 @@
 import React from 'react';
 
 class Contact extends React.Component{
+
+    scrollToFirst = () => {
+        window.scrollTo(0, this.home)
+
+    };
+
+
     render() {
         return (
             <section id='contact'>
@@ -17,7 +24,7 @@ class Contact extends React.Component{
                         <div className="row">
 
                             <form className="col-12 col-sm-6 top_padding" id="contact-form" method='post' role="form"
-                                  action='contact.php'>
+                                  action='../contact.php'>
 
                                 <div className="row">
                                     <div className="section_contact flex">
@@ -92,7 +99,7 @@ class Contact extends React.Component{
                         <div className="row">
                             <div className='col'>
                                 <button className='home_arrow' onClick={this.scrollToFirst}><img
-                                    src='/app/images/up_arrow.svg'/></button>
+                                    src='images/up_arrow.svg'/></button>
                             </div>
 
                         </div>

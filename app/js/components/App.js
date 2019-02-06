@@ -10,8 +10,6 @@ class App extends Component{
             <HashRouter>
                 <Switch>
                     <Route exact path="/" component = {Homepage} />
-                    {/*<Route  path="/radzikowskiego" component = {Radzikowskiego} />*/}
-                    {/*<Route  path="/reja" component = {Reja} />*/}
                     <Route component={Error} />
                 </Switch>
             </HashRouter>

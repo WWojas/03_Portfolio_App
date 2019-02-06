@@ -1,6 +1,6 @@
 
 .body_pic {
-  background: url('/app/images/animation-art-colors-948331.jpg');
+  background: url('/images/barrel-wave-motion-nature-1298684.jpg');
   background-size: cover;
   width:100%;
   height: 100vh;
@@ -23,16 +23,51 @@
 }
 
 
-.btn_header h1 {
-  margin: 0;
 
+
+.btn_header {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+
+
+  a {
+    color:whitesmoke;
+    font-size: 30px;
+
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    line-height:2;
+  }
+
+  &:hover {
+    background: rgba(238,238,238,0.4);
+    border: 2px solid orange;
+
+  }
+
+}
+
+#main_navbar {
+  height: 50px;
+  transition: 1s;
+}
+
+.navbar {
+
+  transition: 1s;
 
 }
 
 .navbar {
   background: dimgrey;
   opacity: 1;
-  border-bottom: 2px solid orange;
+  border: none;
   font-size: 0.9rem;
   font-weight: bold;
 
@@ -56,6 +91,8 @@
     margin: 0 auto;
   }
 
+
+
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
@@ -72,3 +109,4 @@
   display: flex;
   flex-direction: row;
 }
+

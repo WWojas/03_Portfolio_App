@@ -71,7 +71,6 @@ hr {
   -webkit-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 
   -webkit-transition: transform 1s ease-in;
@@ -87,10 +86,12 @@ hr {
   -webkit-animation: fadeIn 0.5s forwards;
   -webkit-animation-delay: 2s;
   animation: fadeIn 0.5s forwards;
-  animation-delay: 2s;
+  animation-play-state: running;
 
 
 }
+
+
 
 
 

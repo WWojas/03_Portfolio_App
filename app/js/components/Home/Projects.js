@@ -22,9 +22,9 @@ class Projects extends React.Component{
                         {/* Project no 1*/}
                         <div className="project_item img-fluid col-sm-5 flex">
 
-                            <div class="project_box">
+                            <div className="project_box">
 
-                            <img src="/app/images/Meditation_assistant.jpg" alt="" class="img-fluid project_image"/>
+                            <img src="/images/Meditation_assistant.jpg" alt="" className="img-fluid project_image"/>
 
                             <figcaption className="project_inner_box flex" id='project_text'>
                                 <h2> Meditation Assistant</h2>
@@ -40,7 +40,7 @@ class Projects extends React.Component{
 
                             <div className="project_box">
 
-                                <img src="/app/images/kindergarden_app.jpg" alt=""
+                                <img src="/images/kindergarden_app.jpg" alt=""
                                      className="img-fluid project_image"/>
 
                                 <figcaption className="project_inner_box flex" id='project_text'>
@@ -57,7 +57,7 @@ class Projects extends React.Component{
 
                             <div className="project_box">
 
-                                <img src="/app/images/3rd_app.jpg" alt=""
+                                <img src="/images/3rd_app.jpg" alt=""
                                      className="img-fluid project_image"/>
 
                                 <figcaption className="project_inner_box flex" id='project_text'>
@@ -74,7 +74,7 @@ class Projects extends React.Component{
 
                             <div className="project_box">
 
-                                <img src="/app/images/4th_app.jpg" alt=""
+                                <img src="/images/4th_app.jpg" alt=""
                                      className="img-fluid project_image"/>
 
                                 <figcaption className="project_inner_box flex" id='project_text'>
@@ -97,18 +97,4 @@ class Projects extends React.Component{
 export default Projects;
 
 
-{/*<div className="project_item img-fluid col-sm-5 flex" onMouseOver={this.showDescription_1}*/}
-     {/*onMouseOut={this.hideDescription_1}>*/}
-    {/*{*/}
-        {/*this.state.showProjectDesc &&*/}
-
-        {/*<div className="desc_text">*/}
-            {/*<h2> Meditation Assistant</h2>*/}
-            {/*<button className="btn"><a href='https://codewave.com.pl/meditation_app/' target="blank"> SEE MORE </a>*/}
-            {/*</button>*/}
-
-        {/*</div>*/}
-    {/*}*/}
-
-{/*</div>*/}
 
