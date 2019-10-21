@@ -1,4 +1,7 @@
 import React from 'react';
+import html from "../../../images/author/html.svg";
+import css from "../../../images/author/css-3.svg";
+
 
 class Author extends React.Component{
     render() {
@@ -25,7 +28,9 @@ class Author extends React.Component{
                                 <div className="skill_box">
 
 
-                                    <div className="skill_hex flex"> HTML</div>
+                                    <div className="skill_hex flex">
+                                        <img src={html} />
+                                    </div>
                                     <div className="skill_hex flex"> CSS</div>
                                     <div className="skill_hex flex"> SASS</div>
                                     <div className="skill_hex flex"> Javascript</div>
