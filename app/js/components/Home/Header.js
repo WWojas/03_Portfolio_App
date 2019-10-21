@@ -1,8 +1,13 @@
 import React from 'react';
 import {HashLink as Link} from "react-router-hash-link";
+import main_arrow from '../../../images/main_arrow.svg';
 
-
-
+const main_bg = {
+    backgroundImage: `url('./images/main_bg.jpg')`,
+    backgroundSize: `cover`,
+    width: `100%`,
+    height: `100vh`
+}
 
 class Header extends React.Component{
 
@@ -35,7 +40,7 @@ class Header extends React.Component{
     render() {
         return (
             <section id='home'>
-                <div className='body_pic flex text-center'>
+                <div className='body_pic flex text-center' style={ main_bg}>
                     <img src='/images/CodeWave.svg' className='logo_main'/>
 
                     <button className=' btn_header'>
@@ -44,8 +49,7 @@ class Header extends React.Component{
 
                                 <div className='flex_header'>
                                     <div><h1> Portfolio </h1></div>
-                                    <div className="flex"> <img src='/images/main_arrow.svg'
-                                                                                             className="main_arrow"/>
+                                    <div className="flex"> <img src={main_arrow} className="main_arrow"/>
                                     </div>
                                 </div>
                                 </Link>

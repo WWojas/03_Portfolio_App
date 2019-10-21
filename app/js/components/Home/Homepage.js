@@ -3,7 +3,6 @@ import Header from "./Header";
 import About from "./About";
 import Author from "./Author";
 import Projects from "./Projects";
-import Lets_Connect from "./Lets_Connect";
 import Contact from "./Contact";
 
 
@@ -25,8 +24,6 @@ class Homepage extends Component {
 
                     </div>
                         < Projects />
-                        < Lets_Connect />
-
                     < Contact />
 
 

@@ -1,6 +1,11 @@
 import React from 'react';
-import html from "../../../images/author/html.svg";
+import Html_img from "../../../images/author/html.svg";
 import css from "../../../images/author/css-3.svg";
+import sass from '../../../images/author/sass.svg';
+import JS from '../../../images/author/js.svg';
+import react from '../../../images/author/react.svg';
+import git from '../../../images/author/git.svg';
+import rwd from '../../../images/author/rwd.svg';
 
 
 class Author extends React.Component{
@@ -24,20 +29,49 @@ class Author extends React.Component{
                             </div>
 
 
-                            <div className="col-12 col-sm-6 text-left">
+                            <div>
+
+                            <div>
                                 <div className="skill_box">
 
 
                                     <div className="skill_hex flex">
-                                        <img src={html} />
+                                        <img src={Html_img} />
+                                        <span> HTML </span>
                                     </div>
-                                    <div className="skill_hex flex"> CSS</div>
-                                    <div className="skill_hex flex"> SASS</div>
-                                    <div className="skill_hex flex"> Javascript</div>
-                                    <div className="skill_hex flex"> jQuery</div>
-                                    <div className="skill_hex flex"> REST API</div>
-                                    <div className="skill_hex flex"> React JS & Webpack</div>
-                                    <div className="skill_hex flex"> Bootstrap & GIT</div>
+                                    <div className="skill_hex flex">
+                                    <img src={css}/>
+                                    <span> CSS</span>
+                                    </div>
+
+                                    <div className="skill_hex flex">
+                                    <img src={sass} />
+                                    <span> SASS </span>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div className="skill_hex flex">
+                                    <img src={JS} />
+                                    <span> JAVASCRIPT (+ES6)</span>
+                                    </div>
+
+                                    <div className="skill_hex flex">
+                                        <img src={rwd} />
+                                        <span> RWD </span>
+                                    </div>
+
+                                    <div className="skill_hex flex">
+                                        <img src={react} />
+                                        <span> REACT </span>
+                                    </div>
+
+                                    <div className="skill_hex flex">
+                                        <img src={git} />
+                                        <span> GIT </span>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
