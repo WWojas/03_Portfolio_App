@@ -43,17 +43,9 @@ class Header extends React.Component{
                 <div className='body_pic flex text-center' style={ main_bg}>
                     <img src='/images/CodeWave.svg' className='logo_main'/>
 
-                    <button className=' btn_header'>
 
-                            <Link to ="/#projects">
+                    <button className='btn_header'> <Link to ="/#projects"><span> Portfolio </span></Link></button>
 
-                                <div className='flex_header'>
-                                    <div><h1> Portfolio </h1></div>
-                                    <div className="flex"> <img src={main_arrow} className="main_arrow"/>
-                                    </div>
-                                </div>
-                                </Link>
-                    </button>
                 </div>
 
 

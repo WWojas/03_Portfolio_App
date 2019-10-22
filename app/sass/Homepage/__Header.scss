@@ -21,27 +21,28 @@
 
 
 .btn_header {
-  margin-top: 20px;
-  border-radius: 10px;
-  background-image: linear-gradient(to right top, #350bec, #0068ff, #0095ff, #00bafc, #77d9ed);
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-self: center;
+  margin: 2vh auto;
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid lightgrey;
+  border-radius:5px;
 
   a {
-    color: whitesmoke;
-    font-size: 30px;
+    color: darkslategrey;
 
   }
 
-  h1 {
-    padding: 0;
-    margin: 0;
-    line-height:2;
-  }
 
   &:hover {
     background-image: linear-gradient(to right top, #350bec, #0068ff, #0095ff, #00bafc, #77d9ed);
 
     a {
       text-decoration: none;
+      color: whitesmoke;
     }
 
   }
