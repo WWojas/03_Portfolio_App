@@ -15,17 +15,18 @@ class Author extends React.Component{
 
                 <div className="row">
 
-                    <div className="col">
-                        <div className="row">
 
-                            <div className="col-12 col-sm-6 text-center">
+                            <div className="author_Wrapper text-center">
                                 <img src='/images/author.jpg' className="img-fluid author_img"/>
 
-                                <h2> Who am I </h2>
+                                <h2> About Me </h2>
 
-                                <p>I'm the Front-End Developer, owner of CodeWave, Cracov, Poland. <br/>
+                                <p>I'm the Front-End Developer, owner of CodeWave. <br/>
+
                                     I am dedicated towards making fully functional, usable web applications.
                                 </p>
+
+
                             </div>
 
 
@@ -74,8 +75,7 @@ class Author extends React.Component{
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+
                 </div>
             </section>
             );
